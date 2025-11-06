@@ -204,7 +204,7 @@ const Home = () => {
               {/* Central placeholder for illustration */}
               <div className="absolute inset-8 rounded-[32px] flex items-center justify-center overflow-hidden">
                 <motion.img
-                  src="/images/gallery/artiste.jpg"
+                  src={`${import.meta.env.BASE_URL}images/gallery/artiste.jpg`}
                   alt="Portrait de l'artiste"
                   className="w-full h-full object-cover"
                   initial={{ opacity: 0, scale: 1.1 }}

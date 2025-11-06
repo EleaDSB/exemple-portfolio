@@ -81,7 +81,7 @@ const About = () => {
               className="aspect-square rounded-3xl overflow-hidden shadow-xl relative"
             >
               <img
-                src="/images/gallery/jeandupont.jpg"
+                src={`${import.meta.env.BASE_URL}images/gallery/jeandupont.jpg`}
                 alt="Jean Dupont - Illustrateur"
                 className="w-full h-full object-cover"
               />

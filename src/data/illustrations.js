@@ -1,6 +1,9 @@
 // Données des illustrations du portfolio
 // Vous pouvez facilement ajouter, modifier ou supprimer des illustrations ici
 
+// Helper pour construire les chemins d'images avec le base URL
+const getImagePath = (imagePath) => `${import.meta.env.BASE_URL}${imagePath}`;
+
 export const illustrations = [
   {
     id: 1,
@@ -9,7 +12,7 @@ export const illustrations = [
     description: "Un portrait expressif mêlant réalisme et imagination",
     color: "bg-gradient-to-br from-purple-200 to-pink-200",
     height: "tall",
-    image: "/images/gallery/portraitimaginaire.png",
+    image: getImagePath("images/gallery/portraitimaginaire.png"),
     tags: ["portrait", "digital", "fantaisie"]
   },
   {
@@ -49,7 +52,7 @@ export const illustrations = [
     description: "Illustration d'un moment de vie du quotidien",
     color: "bg-gradient-to-br from-yellow-200 to-amber-200",
     height: "medium",
-    image: "/images/gallery/scenequotidienne.jpg",
+    image: getImagePath("images/gallery/scenequotidienne.jpg"),
     tags: ["lifestyle", "quotidien", "scène"]
   },
   {
@@ -89,7 +92,7 @@ export const illustrations = [
     description: "Vue majestueuse de montagnes enneigées",
     color: "bg-gradient-to-br from-sky-200 to-blue-200",
     height: "short",
-    image: "/images/gallery/montagne.png",
+    image: getImagePath("images/gallery/montagne.png"),
     tags: ["paysage", "montagne", "nature"]
   },
   {
